@@ -18,8 +18,8 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send(f'Hi! I am a bot {bot.user}!')
 
-organik = ["daun","sayur","kulit pisang"]
-anorganik = ["plastik","besi","kabel"]
+organik = ["daun","sayur","kulit pisang", "ranting", "kayu"]
+anorganik = ["plastik","besi","kabel", "karton", "kardus"]
 
 @bot.command()
 async def pilih(ctx, sampah):
@@ -28,4 +28,4 @@ async def pilih(ctx, sampah):
     elif sampah in anorganik:
         await ctx.send("Masukkan dalam sampah anorganik")
 
-bot.run("MASUKKAN TOKEN KAMU DI SINI")
+bot.run("TOKEN")
